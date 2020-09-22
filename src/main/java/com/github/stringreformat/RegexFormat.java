@@ -13,6 +13,10 @@ import com.github.stringreformat.exceptions.MatchNotFoundException;
  */
 public class RegexFormat {
 
+    public RegexFormat() {
+        throw new ExceptionInInitializerError("Class should only be used in a static way.");
+    }
+
     /**
      * Reformats first occurrence that the regex matches according to the provided
      * injectPattern.
