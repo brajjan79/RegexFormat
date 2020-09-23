@@ -98,6 +98,16 @@ public class TestFormatString {
         assertEquals(expectedString, reformattedString);
     }
 
+    @Test
+    public void testReformatAllTextMultipleWordsSomeOutOfBounds() throws Throwable {
+        final String string = "Reformat this asap.";
+        final String expectedString = "tamrofeR siht pasa.";
+        final String regex = "Reformat|this|asap";
+        final String pattern = "$7$6$5$4$3$2$1$0";
+        final String reformattedString = RegexFormat.reformatAll(string, regex, pattern);
+        assertEquals(expectedString, reformattedString);
+    }
+
     @Test(expected=MatchNotFoundException.class)
     public void testNoMatchException() throws MatchNotFoundException {
         final String string = "Reformat this asap.";

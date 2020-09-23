@@ -88,13 +88,13 @@ public class RegexFormat {
     private static String replaceMatchedWithInjectPatternValues(final String string, final String injectPattern,
         final Matcher matcher) {
         final String match = matcher.group();
-        String reformattedString = string.replace(match, injectPattern);
+        String reformattedString = string.replaceAll("\\$", "_dollar_sign_").replace(match, injectPattern);
         final String[] chars = match.split("");
         for (int i = chars.length - 1; i >= 0; i--) {
             final String index = "$" + String.valueOf(i);
             final String replaceWith = chars[i];
             reformattedString = reformattedString.replace(index, replaceWith);
         }
-        return reformattedString;
+        return reformattedString.replaceAll("\\$[0-9]{0,9}", "").replaceAll("_dollar_sign_", "$");
     }
 }
