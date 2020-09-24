@@ -6,7 +6,7 @@
 
 	<groupId>com.github.brajjan79</groupId>
 	<artifactId>string-reformat</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>FileRenamer</name>
 	<description>Simple and easy way to change the format of a sting using regex.</description>
 
