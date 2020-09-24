@@ -102,11 +102,11 @@ String reformattedString = RegexFormat.reformatAll(string, regex, pattern);
 ```
 
 **Do nots:**
-Locating $ signs in a regex is currently not supported. Since $[n] is part
+Locating $ signs in a regex is currently not supported. Since $n is part
 of the inject pattern all existing $ in the input string will be removed
 and re added in the end.
 
-## Installation
+### Installation
 
 Recommended is to install the tool via a dependency manager like Maven or
 Gradle.
