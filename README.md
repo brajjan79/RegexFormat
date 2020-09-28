@@ -32,6 +32,7 @@ import com.github.stringreformat.RegexFormat;
 The RegexFormat class has 2 public methods:
 RegexFormat.reformat(string, regex, pattern) - reformats first occurrence of the regex.
 RegexFormat.reformatAll(string, regex, pattern) - reformats all occurrences of the regex.
+RegexFormat.hasMatch(string, regex) - returns a boolean if match exist.
 
 #### *Input data*
 
@@ -99,6 +100,18 @@ String regex = "Reformat|this|asap";
 String pattern = "$7$6$5$4$3$2$1$0";
 String reformattedString = RegexFormat.reformatAll(string, regex, pattern);
 --> "tamrofeR siht pasa."
+
+# hasMatch()
+String string = "20120210_125954";
+String regex = "[0-9]{8}_[0-9]{6}";
+boolean matches = RegexFormat.hasMatch(string, regex);
+--> True
+
+# hasMatch()
+String string = "20120210_125954";
+String regex = "Some-words";
+boolean matches = RegexFormat.hasMatch(string, regex);
+--> False
 ```
 
 **Do nots:**

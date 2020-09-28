@@ -1,6 +1,8 @@
 package com.github.stringreformat;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -119,5 +121,19 @@ public class TestFormatString {
     @Test(expected=ExceptionInInitializerError.class)
     public void testInitException() throws MatchNotFoundException {
         new RegexFormat();
+    }
+
+    @Test
+    public void testHasMatchTrue() throws Throwable {
+        final String string = "20120210_125954";
+        final String regex = "[0-9]{8}_[0-9]{6}";
+        assertTrue(RegexFormat.hasMatch(string, regex));
+    }
+
+    @Test
+    public void testHasMatchFalse() throws MatchNotFoundException {
+        final String string = "Reformat this asap.";
+        final String regex = "[0-9]";
+        assertFalse(RegexFormat.hasMatch(string, regex));
     }
 }

@@ -72,6 +72,22 @@ public class RegexFormat {
         return reformattedString;
     }
 
+    /**
+     * Checks if a given regex has a match in the provided string.
+     *
+     * @param string    :: Provided string to reformat
+     * @param regex     :: Regex to find part of string
+     * @return          :: boolean
+     */
+    public static boolean hasMatch(final String string, final String regexPattern) {
+        try {
+            prepareMatcher(regexPattern, string);
+            return true;
+        } catch (final MatchNotFoundException e) {
+            return false;
+        }
+    }
+
     private static Matcher prepareMatcher(final String regexPattern, final String string)
         throws MatchNotFoundException {
         final Pattern pattern = Pattern.compile(regexPattern);
@@ -97,4 +113,5 @@ public class RegexFormat {
         }
         return reformattedString.replaceAll("\\$[0-9]{0,9}", "").replaceAll("_dollar_sign_", "$");
     }
+
 }
