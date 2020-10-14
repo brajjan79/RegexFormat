@@ -1,6 +1,9 @@
 # String Reformat
 
-[![Build Status](https://travis-ci.com/brajjan79/string-reformat.svg?branch=master)](https://travis-ci.com/brajjan79/string-reformat) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/14f5a03d0fcb4023b47a51f6e1b53e91)](https://app.codacy.com/manual/brajjan79/string-reformat?utm_source=github.com&utm_medium=referral&utm_content=brajjan79/string-reformat&utm_campaign=Badge_Grade_Settings) [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/b66a41f008784c7fb10cdbbc79e50868)](https://www.codacy.com/manual/brajjan79/string-reformat?utm_source=github.com&utm_medium=referral&utm_content=brajjan79/string-reformat&utm_campaign=Badge_Coverage) [![Jitpack Url](https://jitpack.io/v/brajjan79/string-reformat.svg)](https://jitpack.io/#brajjan79/string-reformat)
+[![Build Status](https://travis-ci.com/brajjan79/string-reformat.svg?branch=master)](https://travis-ci.com/brajjan79/string-reformat) 
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/6121fcdf61bc464eb9d8b604b5514ab2)](https://www.codacy.com/gh/brajjan79/string-reformat/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=brajjan79/string-reformat&amp;utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6121fcdf61bc464eb9d8b604b5514ab2)](https://www.codacy.com/gh/brajjan79/string-reformat/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=brajjan79/string-reformat&amp;utm_campaign=Badge_Grade)
+[![Jitpack Url](https://jitpack.io/v/brajjan79/string-reformat.svg)](https://jitpack.io/#brajjan79/string-reformat)
 
 ## Description
 
