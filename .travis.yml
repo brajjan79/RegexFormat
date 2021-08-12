@@ -18,7 +18,7 @@ before_install:
 stages:
   - test
   - name: report_coverage
-    if: branch = master AND type != pull_request
+    if: branch = main AND type != pull_request
 
 # List of jobs to run, tied to specific stages
 jobs:
