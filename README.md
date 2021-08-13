@@ -15,11 +15,13 @@ string using a regex, then splitting the found part into a list och characters
 that can then be injected as a replacement to the found string. This also
 includes any provided characters
 
+
 -   **Input string:** Can be anything except contain "$xx" where xx is random number.
 -   **Regex:** Any kind of regex, class throws exception of no match was found.
 -   **Reformat pattern:** Characters found by regex is represented as "$" and a number 
     that matches the position of the found char. Any other provided characters will be 
     injected as well.
+
 
 #### *Import the class*
 
@@ -126,6 +128,6 @@ Gradle.
 The source data can be downloaded here:
 <https://github.com/brajjan79/RegexFormat/tags>
 
-#### Maven, Gradle etc:
+#### Maven, Gradle etc
 
 See Jitpack: <https://jitpack.io/#brajjan79/RegexFormat>
