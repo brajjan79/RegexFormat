@@ -16,7 +16,9 @@ that can then be injected as a replacement to the found string. This also
 includes any provided characters
 
 -   **Input string:** Can be anything except contain "$xx" where xx is random number.
+
 -   **Regex:** Any kind of regex, class throws exception of no match was found.
+
 -   **Reformat pattern:** Characters found by regex is represented as "$" and a number
     that matches the position of the found char. Any other provided characters will be
     injected as well.
